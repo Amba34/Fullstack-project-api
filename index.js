@@ -26,8 +26,13 @@ const connect = async () => {
 }
 
 //middlewares
-
-app.use(cors({ origin: "http://localhost:3000" }));
+   app.use(cors({
+     origin: [
+       "https://fullstack-project-admin-mu.vercel.app",
+       "https://fullstack-project-client.vercel.app"
+     ],
+     credentials: true
+   }));
 
 app.use(cookieParser());
 
