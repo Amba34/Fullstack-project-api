@@ -29,7 +29,8 @@ const connect = async () => {
    app.use(cors({
      origin: [
        "https://fullstack-project-admin-mu.vercel.app",
-       "https://fullstack-project-client.vercel.app"
+       "https://fullstack-project-client.vercel.app",
+         "http://localhost:3000"
      ],
      credentials: true
    }));
